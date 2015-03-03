@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The functions in this script generate a "custom" matrix
+## and calculate its inverse, storing the inverse in a 
+## property of the customized matrix.
 
-## Write a short comment describing this function
+## This function generates the "custom" matrix with the
+## inverse cached in a property.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates de inverse of the "custom" matrix 'x'
+## and, if the customized matrix already has its inverse
+## calculated, it retrieves it from the cache.
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
